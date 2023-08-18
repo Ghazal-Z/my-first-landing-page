@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano for children 🎹</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(130, 205, 221) 0%,
+          rgb(255, 247, 153) 90%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #49a49d;
+        font-size: 30px;
+        font-weight: 1000;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid rgb(245, 41, 82);
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 18px;
+        color: #2b2d30;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        color: #2b2d30;
+        font-size: 17px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: #49a49d;
+        border: 1px solid #2b2d30;
+        color: #2b2d30;
+        font-size: 20px;
+        line-height: 22px;
+        padding: 20px 25px;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+        border-radius: 22px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      button:hover {
+        color: #49a49d;
+        background: #2b2d30;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #49a49d;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .registration {
+        text-align: center;
+        font-size: 18px;
+        color: rgb(245, 41, 82);
+        text-decoration: none;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .footer {
+        color: #2b2d30;
+        font-size: 15px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .myName {
+        color: #49a49d;
+        text-decoration: none;
+      }
+      .myName:hover {
+        text-decoration: underline;
+      }
+      .container {
+        box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.1);
+        border-radius: 15px;
+        margin: 50px auto;
+        padding: 40px;
+        max-width: 550px;
+        background-color: #ecfdfb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Piano for your precious child</h1>
+      <h2>The remarkable benefits of learning piano as a child</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/525/original/iStock-825024116-crop.jpg?1687336517"
+        alt="Piano Girl"
+        width="450"
+      />
+      <p>
+        From <strong>mom in the six</strong> Website: Did you know putting your
+        children in piano lessons can give them a serious edge in life? Learning
+        how to play the piano can help them build skills and traits that will
+        make them successful adults. Today’s technology gives you plenty of
+        options to get your kids lessons. You can try private lessons from a
+        tutor or get free lessons from YouTube. If you’re still not convinced,
+        here are 7 reasons to enroll your kid in piano lessons:
+      </p>
+      <a
+        href="https://mominthesix.com/piano-lessons-kids-benefits/"
+        target="_blank"
+        class="learn-more"
+        >Find out more
+      </a>
+      <br />
+      <p class="registration">
+        🎉It's time to register your beloved child for an online class✨
+      </p>
+      <button>👉 Register Now</button>
+      <br />
+      <hr />
+      <p class="footer">
+        This page was built by
+        <a
+          class="myName"
+          href="https://ir.linkedin.com/in/ghazal-ziadlou"
+          target="_blank"
+          >Ghazal Ziadlou☺</a
+        >
+      </p>
+    </div>
+    <script>
+      function registerNow() {
+        let name = prompt("What is your child's name?");
+        let emoji = prompt("What is his/her favorite emoji?");
+        let age = prompt("How old is he/she?");
+        let email = prompt("What is your email?");
+
+        alert(
+          "Thank you! " +
+            "We'll be in touch by email! " +
+            "Don't forget to send our love to your " +
+            name +
+            emoji
+        );
+      }
+      let registerButton = document.querySelector("button");
+      registerButton.addEventListener("click", registerNow);
+    </script>
+  </body>
+</html>
